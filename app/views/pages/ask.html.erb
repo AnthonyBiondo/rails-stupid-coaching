@@ -1,0 +1,12 @@
+<div class="container">
+<h1>Stupid Coaching</h1>
+<p>Ask your coach anything:</p>
+ <div class="form-group ju">
+<form action="/answer" data-turbo="false" class ="d-flex">
+  <input type="text" name="question" value="<%= params[:question] %>" class="w-100 p-3">
+  <input type="submit" value="Ask!" class="btn btn-primary">
+</form>
+
+<%= link_to "answer", answer_path %>
+</div>
+</div>
